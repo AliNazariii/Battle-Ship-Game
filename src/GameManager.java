@@ -315,7 +315,7 @@ public abstract class GameManager
 
                 userInterface(input);
 
-                input.cellsTemp[x][y] = 2;
+                temp.cellsTemp[x][y] = 2;
                 break;
             }
         }

@@ -76,7 +76,7 @@ public class OnePlayer extends GameManager
                     }
                 }
 
-                getCoordinates(firstPlayer, computer);
+                playComputer();
                 break;
             }
             case 2:
@@ -86,8 +86,9 @@ public class OnePlayer extends GameManager
             }
             case 0:
             {
+                setWrongHit(computer, x, y);
                 System.out.println("False!");
-                computer.cellsTemp[x][y] = 2;
+                firstPlayer.cellsTemp[x][y] = 2;
                 break;
             }
         }
